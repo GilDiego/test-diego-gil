@@ -14,7 +14,7 @@
   {
     "title": "White Mexican Town",
     "desciption": "White mexican town, crowded with culture and traditions",
-    "source": "https://data.whicdn.com/images/324768688/original.jpg?t=1546617285",
+    "source":"https://www.merida.gob.mx/municipio/sitiosphp/merida/cod/img/img_centrohistorico.jpg",
     "liked": false
   },
   {
@@ -40,5 +40,12 @@
     "desciption": "City Aesthetic",
     "source": "https://pm1.narvii.com/6725/3ed5e415cf8920743fb47a5ba573f5d90d42993bv2_hq.jpg",
     "liked": false
+  },
+  {
+    "title": "Edmonton, AB",
+    "desciption": "Winter in Edmonton",
+    "source": "https://elsouvenir.com/wp-content/uploads/2016/08/edmonton-1.jpg",
+    "liked": false
   }
+
 ]

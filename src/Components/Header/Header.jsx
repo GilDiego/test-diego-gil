@@ -3,8 +3,8 @@ import styles from './Header.module.css'
 
 export default function Header() {
     return (
-        <div>
-            
+        <div className={styles.wrapper}>
+            <h1>Our Gallery</h1>
         </div>
     )
 }
