@@ -1,8 +1,9 @@
-import { GET_DATA, SET_LIKED } from "./actions";
+import { GET_DATA, HANDLE_LIKED, HANDLE_MODAL } from "./actions";
 
 const initialState = {
     loadedCards: [],
-    likedCards: []
+    likedCards: [],
+    modal: null
 }
 
 function rootReducer(state = initialState, action) {
@@ -12,11 +13,16 @@ function rootReducer(state = initialState, action) {
                 ...state,
                 loadedCards: action.payload
             }
-        // case SET_LIKED:
-        //     return {
-        //         ...state,
-        //         likedCards: action.payload
-        //     }
+        case HANDLE_LIKED:
+            return {
+                ...state,
+                likedCards: action.payload
+            }
+        case HANDLE_MODAL:
+            return {
+                ...state,
+                modal: action.payload
+            }
         default:
             break;
     }
