@@ -1,7 +1,7 @@
 [
   {
     "title": "New York City",
-    "description": "New York City, a calm view of the big city and its skyscrapers!!",
+    "description": "New York City, a calm view of the big city and its skyscrapers",
     "source": "https://data.whicdn.com/images/297540691/original.jpg",
     "liked": false
   },
@@ -12,9 +12,9 @@
     "liked": false
   },
   {
-    "title": "White Mexican Town",
-    "description": "White mexican town, crowded with culture and traditions",
-    "source":"https://www.merida.gob.mx/municipio/sitiosphp/merida/cod/img/img_centrohistorico.jpg",
+    "title": "Merida City",
+    "description": "A view from behind the cathedral in Merida",
+    "source":"https://www.elsoldemexico.com.mx/incoming/eabxnq-merida-recorte.jpg/ALTERNATES/LANDSCAPE_1140/M%C3%A9rida%20recorte.jpg",
     "liked": false
   },
   {
@@ -42,7 +42,7 @@
     "liked": false
   },
   {
-    "title": "Edmonton, AB",
+    "title": "Edmonton City",
     "description": "Winter in Edmonton",
     "source": "https://elsouvenir.com/wp-content/uploads/2016/08/edmonton-1.jpg",
     "liked": false

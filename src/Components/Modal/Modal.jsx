@@ -9,18 +9,18 @@ export default function Modal() {
 
     return (
         <div className={styles.wrapper}>
-            <div>
-                <i className="fas fa-times" onClick={() => dispatch(handleModal(null))}></i>
-                <p>{modal?.source}</p>
+            <div className={styles.top}>
+                <i className={`fas fa-times ${styles.closeIcon}`} onClick={() => dispatch(handleModal(null))}></i>
+                <div className={styles.image}>
+                    <img src={modal?.source} alt={modal?.title} />
+                </div>
             </div>
-            <div>
+            <div className={styles.middle}>
                 <span>{modal?.title}</span>
-                <i className="fas fa-heart" onClick={() => dispatch(handleLiked(modal?.title))}/>               
+                <i className={`fas fa-heart ${styles.heartIcon}`} onClick={() => dispatch(handleLiked(modal?.title))}/>               
             </div>
-            <div>
-                <p>
-                    {modal?.description}
-                </p> 
+            <div className={styles.bottom}>
+                <p>{modal?.description}</p> 
             </div>
         </div>
     )

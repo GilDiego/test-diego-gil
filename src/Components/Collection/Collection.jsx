@@ -6,8 +6,7 @@ import Card from './Card'
 
 
 export default function Collection() {
-    const [loading, setLoading] = useState(true) // If loading false, displays cards
-    const [display, setDisplay] = useState([]) // Cards being mapped and displayed
+    const [collection, setCollection] = useState([0, 1, 2, 3, 4, 5, 6, 7])
     const [cards, setCards] = useState(0) // Amount of cards to fetch from redux
     const [timer, setTimer] = useState(0) // Timer in seconds
     const [fetching, setFetching] = useState(true) // While true, fetching can continue
@@ -24,9 +23,12 @@ export default function Collection() {
     },[cards])
 
     useEffect(() => {
-        if (data) {
-            setLoading(false)
-            setDisplay(data)
+        if (data){
+            let arr = data
+            while (arr.length < 8){
+                arr.push(arr.length)
+            }
+            setCollection(arr)
         }
     },[data])
 
@@ -67,8 +69,8 @@ export default function Collection() {
             <div className={styles.display}>
                 {
                     !showLiked ? (
-                        !loading ? (
-                            display.map((card, index) => ( 
+                        collection ? (
+                            collection.map((card, index) => ( 
                                 <Card
                                     key={`${card.title} ${index}`}
                                     img={card.source}

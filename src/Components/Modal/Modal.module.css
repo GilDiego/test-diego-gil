@@ -1,0 +1,43 @@
+.wrapper {
+  position: absolute;
+  border-radius: 15px;
+  height: 75%;
+  width: 40%;
+  background-color: var(--Background);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 1rem;
+  width: 94%;
+  height: 75%;
+}
+.closeIcon {
+  cursor: pointer;
+  font-size: larger;
+  color: var(--IconColor);
+  margin-left: auto;
+  margin-bottom: 0.4rem;
+}
+.image {
+  object-fit: cover;
+  background-color: red;
+}
+.middle {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 1.05rem 0 1.05rem;
+  font-size: larger;
+}
+.heartIcon {
+  color: var(--IconColor);
+}
+.bottom {
+  text-align: left;
+  margin: 0.5rem 1.05rem 0 1.05rem;
+}

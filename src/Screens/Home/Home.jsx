@@ -20,9 +20,10 @@ export default function Home() {
     return (
         <div className={styles.pageContainer}>
             <div className={styles.contentWrap}>
+                {modal ? <div className={styles.background} /> : null}
                 <Header />
-                <Collection />           
                 {modal ? <Modal /> : null}           
+                <Collection />           
             </div>            
                 <Footer />            
         </div>
