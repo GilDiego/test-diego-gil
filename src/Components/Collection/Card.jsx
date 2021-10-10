@@ -9,13 +9,13 @@ export default function Card({ img, title }) {
 
     return (
         <div className={styles.wrapper}>
-            <div>
+            <div className={styles.top}>
                 <img src={img} alt={title} onClick={() => dispatch(handleModal(title))}/>
             </div>
-            <div>
-                <p>{title}</p>
+            <div className={styles.bottom}>
+                <span>{title || 'Title'}</span>
                 <i 
-                    className="fas fa-heart"
+                    className={`fas fa-heart ${styles.heart}`}
                     onClick={() => dispatch(handleLiked(title))}>
                 </i>
             </div>

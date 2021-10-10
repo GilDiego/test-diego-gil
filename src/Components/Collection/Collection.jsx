@@ -11,7 +11,7 @@ export default function Collection() {
     const [cards, setCards] = useState(0) // Amount of cards to fetch from redux
     const [timer, setTimer] = useState(0) // Timer in seconds
     const [fetching, setFetching] = useState(true) // While true, fetching can continue
-    const [showLiked, setShowLiked] = useState(false)
+    const [showLiked, setShowLiked] = useState(false) // Triggers display of only liked cards
 
     const dispatch = useDispatch()
     const data = useSelector(state => state?.loadedCards)
@@ -60,9 +60,9 @@ export default function Collection() {
     return (
         <div className={styles.wrapper}>
 
-            <button className={styles.showLiked} onClick={() => setShowLiked(!showLiked)}>
+            <span className={styles.showLiked} onClick={() => setShowLiked(!showLiked)}>
                 Photos you liked
-            </button>
+            </span>
 
             <div className={styles.display}>
                 {

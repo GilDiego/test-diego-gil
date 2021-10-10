@@ -5,17 +5,17 @@ export default function Footer() {
     return (
         <div className={styles.wrapper}>
             <span>
-                {
-                    new Date().toLocaleDateString()
-                }
+                {new Date().toLocaleDateString()}
             </span>
             <span>
-                <a href="https://github.com/GilDiego/test-diego-gil">
-                    My repository
+                <a href="https://github.com/GilDiego/test-diego-gil" target="_blank" rel="noreferrer">
+                    View Repository
                 </a>
             </span>
             <span>
-                Diego Gil
+                <a href="https://www.linkedin.com/in/gil-diego/" target="_blank" rel="noreferrer">
+                        Diego Gil
+                </a>
             </span>
         </div>
     )

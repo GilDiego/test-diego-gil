@@ -18,12 +18,14 @@ export default function Home() {
     },[displayModal])
 
     return (
-        <div className={styles.wrapper}>
-            <Header />
-            <Collection />           
-            {modal ? <Modal /> : null}           
-            <Footer />
-            
+        <div className={styles.pageContainer}>
+            <div className={styles.contentWrap}>
+                <Header />
+                <Collection />           
+                {modal ? <Modal /> : null}           
+            </div>            
+                <Footer />            
         </div>
+        
     )
 }
