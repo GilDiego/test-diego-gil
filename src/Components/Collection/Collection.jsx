@@ -92,7 +92,9 @@ export default function Collection() {
                                 />
                             ))
                         ) : (
-                            <p> No cards liked yet!</p>
+                            <div className={styles.noCard}>
+                                <p> No cards liked yet!</p>
+                            </div>
                         )
                     )
                 }

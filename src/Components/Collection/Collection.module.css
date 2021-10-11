@@ -7,7 +7,9 @@
 /* Button */
 .buttons {
   display: grid;
+  grid-template-columns: 59rem;
   max-width: 100%;
+  margin: auto;
 }
 .showLiked {
   margin-left: auto;
@@ -24,7 +26,8 @@
 }
 .display {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  margin: auto;
+  grid-template-columns: 15rem 15rem 15rem 15rem;
   column-gap: normal;
 }
 
@@ -34,6 +37,9 @@
 }
 
 @media (max-width: 376px) {
+  .buttons {
+    display: block;
+  }
   .showLiked {
     margin: auto;
     margin-top: 0.5rem;
@@ -48,6 +54,9 @@
   }
 }
 @media (min-width: 376px) and (max-width: 769px) {
+  .buttons {
+    display: block;
+  }
   .showLiked {
     margin: auto;
     margin-top: 0.5rem;
