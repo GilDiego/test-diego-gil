@@ -18,7 +18,7 @@
 .image:hover {
   cursor: pointer;
 }
-.heart .dormantHeart {
+.heart .dormantHeart .inactive {
   color: var(--IconColor);
 }
 .active {
