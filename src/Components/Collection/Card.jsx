@@ -18,6 +18,7 @@ export default function Card({ img, title }) {
         let obj = data.filter(city => city.title === title)
         if (obj.length) setActive(true)
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[data])
 
     return (

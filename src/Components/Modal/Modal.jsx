@@ -19,6 +19,7 @@ export default function Modal() {
         let obj = data.filter(city => city.title === modal?.title)
         if (obj.length) setActive(true)
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[data])
 
     return (

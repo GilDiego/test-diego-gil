@@ -62,9 +62,11 @@ export default function Collection() {
     return (
         <div className={styles.wrapper}>
 
-            <span className={styles.showLiked} onClick={() => setShowLiked(!showLiked)}>
-                Photos you liked
-            </span>
+            <div className={styles.buttons}>
+                <span className={styles.showLiked} onClick={() => setShowLiked(!showLiked)}>
+                    Photos you liked
+                </span>
+            </div>
 
             <div className={styles.display}>
                 {
