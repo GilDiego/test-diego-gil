@@ -24,16 +24,29 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease 0s;
 }
+.showLiked:hover {
+  color: var(--Background);
+  background-color: var(--Blue);
+}
+.active {
+  margin-left: auto;
+  margin-bottom: 0.5rem;
+  float: right;
+  cursor: pointer;
+  font-size: smaller;
+  border: 1px solid var(--Blue);
+  border-radius: 5px;
+  padding: 0.5rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease 0s;
+  background-color: var(--Blue);
+  color: var(--Background);
+}
 .display {
   display: grid;
   margin: auto;
   grid-template-columns: 15rem 15rem 15rem 15rem;
   column-gap: normal;
-}
-
-.showLiked:hover {
-  color: var(--Background);
-  background-color: var(--Blue);
 }
 
 @media (max-width: 376px) {

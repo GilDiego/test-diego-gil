@@ -8,6 +8,7 @@
   margin-bottom: 1.8rem;
 }
 .background {
+  z-index: 2;
   position: absolute;
   left: 0;
   right: 0;

@@ -22,6 +22,11 @@ export default function Modal() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     },[data])
 
+    useEffect(() => {
+        document.body.style.overflow = 'hidden';
+        return ()=> document.body.style.overflow = 'unset';
+    }, []);
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.top}>
