@@ -21,36 +21,40 @@ export default function Modal() {
     }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     },[data])
-
+    
     useEffect(() => {
+        window.scrollTo(0,0)
         document.body.style.overflow = 'hidden';
         return ()=> document.body.style.overflow = 'unset';
     }, []);
 
     return (
-        <div className={styles.wrapper}>
-            <div className={styles.top}>
-                <i 
-                    className={`fas fa-times ${styles.closeIcon}`} 
-                    onClick={() => dispatch(handleModal(null))}
-                />
-                <div className={styles.imageContainer}>
-                    <img className={styles.image} src={modal?.source} alt={modal?.title} />
+        
+            <div className={styles.wrapper}>
+                <div className={styles.top}>
+                    <i 
+                        className={`fas fa-times ${styles.closeIcon}`} 
+                        onClick={() => dispatch(handleModal(null))}
+                    />
+                    <div className={styles.imageContainer}>
+                        <img className={styles.image} src={modal?.source} alt={modal?.title} />
+                    </div>
+                </div>
+                <div className={styles.middle}>
+                    <span>{modal?.title}</span>
+                    <i 
+                        className={`fas fa-heart ${styles.heart} ${active ? styles.active : styles.inactive}`} 
+                        onClick={() => {
+                            dispatch(handleLiked(modal?.title))
+                            toggleClass()
+                        }}
+                    />               
+                </div>
+                <div className={styles.bottom}>
+                    <p>{modal?.description}</p> 
                 </div>
             </div>
-            <div className={styles.middle}>
-                <span>{modal?.title}</span>
-                <i 
-                    className={`fas fa-heart ${styles.heart} ${active ? styles.active : styles.inactive}`} 
-                    onClick={() => {
-                        dispatch(handleLiked(modal?.title))
-                        toggleClass()
-                    }}
-                />               
-            </div>
-            <div className={styles.bottom}>
-                <p>{modal?.description}</p> 
-            </div>
-        </div>
+
+        
     )
 }

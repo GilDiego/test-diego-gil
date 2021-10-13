@@ -55,7 +55,7 @@ export default function Collection() {
     
     //Stop fetching
     useEffect(() => {
-        if (timer >= 840/*40*/  ) setFetching(false)
+        if (timer >= 840/*40*/) setFetching(false)
     },[timer])
 
 

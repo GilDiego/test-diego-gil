@@ -3,12 +3,12 @@
   font-size: xx-large;
   margin-bottom: -1.5rem;
 }
-@media (max-width: 376px) {
+@media (max-width: 520px) {
   .wrapper {
     font-size: x-large;
   }
 }
-@media (min-width: 376px) and (max-width: 769px) {
+@media (min-width: 521px) and (max-width: 979px) {
   .wrapper {
     font-size: xx-large;
   }
