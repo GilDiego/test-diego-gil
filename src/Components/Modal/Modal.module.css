@@ -34,7 +34,7 @@
 .imageContainer {
   margin: auto;
   width: 92%;
-  height: 94%;
+  height: 28rem;
 }
 .image {
   width: 100%;
@@ -84,6 +84,7 @@
   .imageContainer {
     margin: auto;
     min-width: 100%;
+    height: 12rem;
   }
   .image {
     max-width: 90%;
@@ -130,7 +131,7 @@
   .imageContainer {
     margin: auto;
     max-width: 92%;
-    height: 100%;
+    height: 20rem;
   }
   .image {
     width: 100%;
