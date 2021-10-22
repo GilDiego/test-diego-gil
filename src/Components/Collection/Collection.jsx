@@ -46,8 +46,8 @@ export default function Collection() {
     useEffect(() => {
         if (
             fetching &&
-            timer !== 840/*40*/ &&
-            timer % 120/*5*/  === 0 
+            timer !== /*840*/40 &&
+            timer % /*120*/5  === 0 
         ){
             setCards(prevAmount => prevAmount + 1)
         }
@@ -55,7 +55,7 @@ export default function Collection() {
     
     //Stop fetching
     useEffect(() => {
-        if (timer >= 840/*40*/) setFetching(false)
+        if (timer >= /*840*/40) setFetching(false)
     },[timer])
 
 
